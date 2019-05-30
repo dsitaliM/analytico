@@ -26,11 +26,12 @@
   <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
     (opened)="setToggleOn()" (closed)="setToggleOff()">
     <mat-nav-list>
-      <a id="mobilelogo" class="logo" fxShow="true" fxShow.gt-xs="false" href="#"><img src="assets/img/logo.png"></a>
+      <a id="mobilelogo" class="logo" fxShow="true" fxShow.gt-xs="false" href="#"><img src="assets/img/logo.png"
+          width="47" height="47"></a>
       <a mat-list-item href="#about">About</a>
       <a mat-list-item href="#portfolio">Portfolio</a>
-      <a mat-list-item href="#pricing">Pricing</a>
-      <a mat-list-item href="#blog">Blog</a>
+      <!-- <a mat-list-item href="#pricing">Pricing</a> -->
+      <!-- <a mat-list-item href="#blog">Blog</a> -->
       <a mat-list-item href="#contact">Contact</a>
     </mat-nav-list>
   </mat-sidenav>
